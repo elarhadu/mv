@@ -18,7 +18,7 @@
       <input
         type="text"
         name="name"
-        id="name"
+        id="name-label"
         class="form-control"
         placeholder="Enter your name"
         required=""
@@ -26,20 +26,30 @@
       <input
         type="email"
         name="email"
-        id="email"
+        id="email-label"
         class="form-control"
         placeholder="Enter your Email"
         required=""
       />
+      <label id="number-label" for="number"
+        >Age<span class="clue">(optional)</span></label
+      >
+
       <input
-        type="email"
-        name="email"
-        id="email"
-        class="form-control"
-        placeholder="Enter your Email"
-        required=""
+        type="number"
+        id="number-label"
+        min="18"
+        max="65"
+        placeholder="Age"
       />
-      <input type="number" id="number" min="18" max="65"/>
+      <select id="dropdown" name="role" class="form-control" required="">
+        <option disabled="" selected="" value="">Select current role</option>
+        <option value="student">Student</option>
+        <option value="job">Full Time Job</option>
+        <option value="learner">Full Time Learner</option>
+        <option value="preferNo">Prefer not to say</option>
+        <option value="other">Other</option>
+      </select>
     </form>
     <script src="js/index.js"></script>
   </body>
